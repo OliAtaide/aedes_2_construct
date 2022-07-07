@@ -3717,6 +3717,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Button.Acts.SetEnabled,
 		C3.Plugins.Sprite.Acts.SetEffectParam,
 		C3.Behaviors.DragnDrop.Acts.SetEnabled,
+		C3.Plugins.System.Cnds.LayerVisible,
 		C3.ScriptsInEvents.Gameeventos_Event15_Act11,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Button.Acts.SetCSSStyle,
@@ -3908,7 +3909,7 @@ self.C3_ExpressionFuncs = [
 		() => 5,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => (and("Você acertou ", v0.GetValue()) + " de 23 questões");
+			return () => (and("Você acertou ", v0.GetValue()) + " de 23 criadouros");
 		},
 		() => "SubstituirCor",
 		() => 1,
