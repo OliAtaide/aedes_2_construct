@@ -3721,6 +3721,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.ScriptsInEvents.Gameeventos_Event15_Act11,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Button.Acts.SetCSSStyle,
+		C3.ScriptsInEvents.Gameeventos_Event16_Act9,
 		C3.Plugins.System.Acts.GoToLayout
 	];
 };
