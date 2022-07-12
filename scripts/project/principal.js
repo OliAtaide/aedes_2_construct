@@ -22,6 +22,21 @@ export function Start(runtime)
 	runtime.addEventListener("tick", () => Tick(runtime));
 }
 
+export function CountAcertos(runtime){
+	var criadouros = runtime.objects.Slot.getAllInstances();
+	var acertos = 0;
+	
+	for (var i = 0; i < criadouros.length; i++){
+		var criadouro = criadouros[i];
+		
+		if(criadouro.instVars.Escolha == criadouro.instVars.Resposta){
+			acertos++;
+		}
+	}
+	
+	runtime.objects.TextoResultado.getFirstInstance().text = "Você acertou " + acertos + " de 23 criadouros";
+}
+
 export function Restart(runtime){
 	var grupos = runtime.objects.Option.getAllInstances();
 	var criadouros = runtime.objects.Slot.getAllInstances();

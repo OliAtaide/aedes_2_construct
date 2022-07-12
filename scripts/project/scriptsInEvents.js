@@ -8,12 +8,17 @@ const scriptsInEvents = {
 			
 		},
 
-		async Gameeventos_Event15_Act11(runtime, localVars)
+		async Gameeventos_Event10_Act8(runtime, localVars)
+		{
+			Principal.CountAcertos(runtime);
+		},
+
+		async Gameeventos_Event13_Act11(runtime, localVars)
 		{
 			Principal.Restart(runtime);
 		},
 
-		async Gameeventos_Event16_Act9(runtime, localVars)
+		async Gameeventos_Event14_Act9(runtime, localVars)
 		{
 			Principal.Start(runtime);
 		}

@@ -3710,18 +3710,19 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.MoveToBottom,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
-		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Plugins.Button.Cnds.OnClicked,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.Button.Acts.SetVisible,
 		C3.Plugins.Button.Acts.SetEnabled,
+		C3.ScriptsInEvents.Gameeventos_Event10_Act8,
+		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Plugins.Sprite.Acts.SetEffectParam,
 		C3.Behaviors.DragnDrop.Acts.SetEnabled,
 		C3.Plugins.System.Cnds.LayerVisible,
-		C3.ScriptsInEvents.Gameeventos_Event15_Act11,
+		C3.ScriptsInEvents.Gameeventos_Event13_Act11,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Button.Acts.SetCSSStyle,
-		C3.ScriptsInEvents.Gameeventos_Event16_Act9,
+		C3.ScriptsInEvents.Gameeventos_Event14_Act9,
 		C3.Plugins.System.Acts.GoToLayout
 	];
 };
@@ -3899,18 +3900,14 @@ self.C3_ExpressionFuncs = [
 			return () => n0.ExpInstVar_Family();
 		},
 		p => {
-			const n0 = p._GetNode(0);
-			return () => n0.ExpInstVar();
-		},
-		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() - 1);
 		},
 		() => 23,
 		() => 5,
 		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => (and("Você acertou ", v0.GetValue()) + " de 23 criadouros");
+			const n0 = p._GetNode(0);
+			return () => n0.ExpInstVar();
 		},
 		() => "SubstituirCor",
 		() => 1,
