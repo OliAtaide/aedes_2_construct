@@ -3773,7 +3773,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.Button.Acts.SetVisible,
 		C3.Plugins.Button.Acts.SetEnabled,
-		C3.ScriptsInEvents.Gameeventos_Event10_Act8,
+		C3.ScriptsInEvents.Gameeventos_Event10_Act6,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Plugins.Sprite.Acts.SetEffectParam,
 		C3.Behaviors.DragnDrop.Acts.SetEnabled,
@@ -3782,6 +3782,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Button.Acts.SetCSSStyle,
 		C3.ScriptsInEvents.Gameeventos_Event14_Act9,
+		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.System.Acts.GoToLayout
 	];
 };
@@ -3836,6 +3837,7 @@ self.C3_JsPropNameTable = [
 	{TextoResultado: 0},
 	{FonteDeSprites: 0},
 	{AreaFechar: 0},
+	{BotaoRefazer: 0},
 	{ArrastarSoltar: 0},
 	{Option: 0},
 	{Botoes: 0},

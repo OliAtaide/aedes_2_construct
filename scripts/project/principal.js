@@ -35,6 +35,18 @@ export function CountAcertos(runtime){
 	}
 	
 	runtime.objects.TextoResultado.getFirstInstance().text = "Você acertou " + acertos + " de 23 criadouros";
+	
+	var botao;
+	
+	if(acertos == 23){
+		botao = runtime.objects.BotaoRefazer.getFirstInstance();
+	}
+	else{
+		botao = runtime.objects.BotaoTentarNovamente.getFirstInstance();
+	}
+	
+	botao.isVisible = true;
+	botao.isEnabled = true;
 }
 
 export function Restart(runtime){
